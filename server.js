@@ -11,7 +11,7 @@ app.use(express.json())
 app.use('/user',Userouter)
 
 app.get('/user',(req,res)=>{
-    res.send("dmdmdm")
+    res.send("Rota de teste")
 })
 
 sequelize.authenticate().
