@@ -10,6 +10,9 @@ User.init(sequelize)
 app.use(express.json())
 app.use('/user',Userouter)
 
+app.get('/user',(req,res)=>{
+    res.send("dmdmdm")
+})
 
 sequelize.authenticate().
 then(()=>{

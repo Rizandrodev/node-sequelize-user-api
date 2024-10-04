@@ -1,6 +1,6 @@
-import Sequelize,{Model} from 'sequelize'
+import  Sequelize,{Model}  from "sequelize";
 
-export class User extends Model{
+ export class User extends Model{
     static init (sequelize){
         super.init({
             name:{
@@ -16,9 +16,13 @@ export class User extends Model{
                 allowNull:false,
                 unique:true
               }
+        },
             
-        } ,{sequelize})
+
+            {sequelize})
     }
 }
 
 export default User
+
+

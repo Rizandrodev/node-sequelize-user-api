@@ -1,9 +1,10 @@
 import express from 'express'
-import { Getall,Deletar,createUser } from '../controllers/usercontroller.js'
+import { Getall,Deletar,createUser,updateUser} from '../controllers/usercontroller.js'
 const router=express.Router()
 
-router.get('/cadastro',createUser)
-router.post('/criar',Getall)
+router.get('/Allusers',Getall)
+router.post('/cadastro',createUser)
 router.delete('/deletando',Deletar)
+router.put('/upadte',updateUser)
 
 export default router
